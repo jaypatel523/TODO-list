@@ -6,7 +6,7 @@ import { UserContext } from "./UserContext";
 
 const App = () => {
   const [user, setUser] = useState({ email: "", password: "" });
-  const [tasks, setTasks] = useState([{ taskid: "", task: "" }]);
+  const [tasks, setTasks] = useState([]);
   const [idCounter, setIdCounter] = useState(0);
   return (
     <UserContext.Provider value={{ user, setUser, tasks, setTasks }}>
